@@ -25,7 +25,6 @@ interface Options extends ReadableOptions {
   dataSize?: number;
   maxDataSize?: number;
   pauseStreams?: boolean;
-  contentDisposition?: string;
 }
 
 declare class FormData extends stream.Readable {
@@ -54,6 +53,7 @@ declare namespace FormData {
     filename?: string;
     filepath?: string;
     contentType?: string;
+    contentDisposition?: string;
   }
 
   interface SubmitOptions extends http.RequestOptions {
