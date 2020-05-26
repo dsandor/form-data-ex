@@ -25,6 +25,7 @@ interface Options extends ReadableOptions {
   dataSize?: number;
   maxDataSize?: number;
   pauseStreams?: boolean;
+  contentDisposition?: string;
 }
 
 declare class FormData extends stream.Readable {
